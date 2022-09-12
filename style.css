@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.log{
+    
+    width: 80px;
+    height: 50px;
+}
+
+nav{
+    padding: 10px;
+    /*border: 1px solid black;*/
+    background-color: rgb(224, 252, 239);
+ 
+}
+
+.ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.a{
+    position: relative;
+    color: rgb(2, 99, 53);
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 500;
+
+}
+.a::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 2px;
+    background-color: rgb(0, 0, 0) ;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease-out;
+
+}
+
+.a:hover::after{
+    width: 100%;
+}
+
+h1{
+    font-size:80px;
+    margin-left: 50px;
+    color: rgb(2, 99, 53);
+    
+}
+
+.caption{
+    color: #000000;
+    overflow: hidden;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: typing 3.5s steps(30, end) infinite, blinking-cursor .5s step-end infinite;
+    white-space: nowrap;
+    margin-left: 52px;
+    margin-top: -50px;
+    animation: typing 3.5s steps(30, end) infinite;
+    font-variant: small-caps;
+    }
+    @keyframes typing {
+    from{
+      width: 0;
+    }
+    to{
+      width: 310px;
+    }
+    }
+
+.bg{
+    width: 500px;
+    overflow: hidden;
+    
+}
+.fa{
+    float: right;
+    margin-top: 1em;
+    margin-left: -2em;
+    font-size: 20px;
+}
+
+
+.mobile-nav{
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 1s ease-in-out;
+    margin-left: -500px;
+    
+    
+    
+}
+.ul1{
+    display: inline;
+    text-align: center;
+    font-size: large;
+    
+}
+.li1{
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+    list-style: none;
+    
+}
+.a1{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    color:rgb(2, 99, 53) ;
+    transition: 0.5s;
+    
+}
+.a1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000000;
+    transition: 0.5s ease-out;
+}
+.a1:hover::after{
+    width: 100%;
+}
+.cls-btn{
+    float: right;
+    color: #000000;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -1px;
+    margin-right: 15px;
+    color:rgb(2, 99, 53) ;
+    cursor: pointer;
+}
+.cls-btn:hover{
+    color: #000000;
+}

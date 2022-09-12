@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>KMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobi.css">
+</head>
+<body>
+    <nav>
+        <img  class="log" src="kms.png" alt="logo">
+
+        <ul class="ul">
+            <li class="li"><a class="a" href="#">Home</a></li>
+            <li class="li"><a class="a" href="#">Medicines</a></li>
+            <li class="li"><a class="a" href="#">Vaccinies</a></li>
+            <li class="li"><a class="a" href="#">Verternary</a></li>
+            <li class="li"><a class="a" href="#">Contact us</a></li>
+            <li class="li"><a class="a" href="#">About us</a></li>
+            
+        </ul>
+      <i onclick="opn()" class="fa fa-bars"></i>
+    </nav>
+
+
+
+
+
+
+
+    <div class="main">
+
+            <h1 data-aos="slide-right" data-aos-duration="2000">KRUPA MEDICAL <br> STORE</h1>
+            <p data-aos="slide-right" data-aos-duration="2000" data-aos-delay="50"  class="caption">Krupa Medical Store</p>
+
+            
+
+        
+    </div>
+<div class="m1">
+    <img class="bg" src="bg.png" alt="">
+</div>
+<div id="mnav" class="mobile-nav">
+    <p onclick="cls()" class="cls-btn">x</p>
+    <ul id="li" class="ul1">
+        <li id="l" class="li1"><a class="a1" href="#">Home</a></li>
+        <li id="l" class="li1"><a class="a1" href="#">Medicines</a></li>
+        <li id="l" class="li1"><a class="a1" href="#">Vaccinies</a></li>
+        <li id="l" class="li1"><a class="a1" href="#">Verternary</a></li>
+        <li id="l" class="li1"><a class="a1" href="#">Contact us</a></li>
+        <li id="l" class="li1"><a class="a1" href="#">About us</a></li>
+        
+    </ul>
+    
+</div>
+
+<script>
+    function opn(){
+        
+        document.getElementById("mnav").style.marginLeft = "0px";
+        
+        
+    }
+    function cls(){
+        
+        document.getElementById("mnav").style.marginLeft = "-500px";
+    }
+    
+    </script>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</html>
